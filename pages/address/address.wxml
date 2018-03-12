@@ -1,0 +1,16 @@
+<!--pages/address/address.wxml-->
+<view class='wrap'>
+  <scroll-view class='scroll'>
+  
+  </scroll-view>
+  <view class='address_bottom'>
+    <view class='address_bottom_weixn'>
+      <image src='../../images/weixin.png'></image>
+      <text>使用微信地址</text>
+    </view>
+    <view class='address_bottom_tianjia' bindtap='tianjiaadd'>
+      <image src='../../images/tianjia.png'></image>
+      <text>添加收货地址</text>
+    </view>
+  </view>
+</view> 

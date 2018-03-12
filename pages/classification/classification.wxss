@@ -1,0 +1,125 @@
+/* pages/classification/classification.wxss */
+page{
+  height: 100%;
+  background-color: #ddd;
+}
+.fenlei{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nav_left{
+  width: 180rpx; 
+  height: 100%;
+}
+.nav_left_text{
+  display: block;
+  width: 180rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.nav_right{
+  flex: 1;
+  background-color: white;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; 
+}
+.logo{
+  height: 230rpx;
+  width: 100%;
+  border-radius: 10rpx;
+}
+.tabar{
+  display: flex;
+  justify-content: space-around;
+}
+.tabar text{
+  font-size: 30rpx;
+  padding: 15rpx 30rpx;
+}
+
+/* 卡片 */
+.rexiao_box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+.rexiao_block{
+  width: 48%;
+  background-color: #eee;
+  margin-bottom: 25rpx;
+  border-radius: 10rpx;
+}
+.rexiao_tit{
+  display: block;
+  font-size: 25rpx;
+  height: 35rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.icon_money{
+  font-size: 24rpx;
+  color: red;
+  
+}
+.rexiao_price{
+  font-size: 26rpx;
+  margin-right: 5rpx;
+  color: red;
+}
+.rexiao_chuxiao{
+  font-size: 16rpx;
+  color: red;
+  display: block;
+  width: 53rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  border: 1rpx solid red;
+  border-radius: 5rpx;
+}
+.rexiao_originalPrice{
+  font-size: 16rpx;
+  text-decoration:line-through;
+  color: #aaa;
+}
+.rexiao_image{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 5rpx;
+}
+.rexiao_price_box,.rexiao_p_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.rexiao_cont{
+  padding: 0 6rpx 6rpx 6rpx;
+  background-color: #eee;
+}
+.scroll{
+  height: 800rpx;
+  margin-top: 5rpx;
+}
+.xuanz{
+  background-color: white;
+  color: red;
+}
+.moren{
+  background-color: #ddd;
+  color: black;
+}
+
+/* 排他 */
+.tabbarxuan{
+  color:red;
+  border-bottom: 7rpx solid red;
+}

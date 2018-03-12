@@ -1,0 +1,50 @@
+<!--pages/ssresult/ssresult.wxml-->
+<view>
+  <view class='sstop'>
+    <image src='../../images/sousuo.png'></image>
+    <text>{{value}}</text>
+    <image src='../../images/kefu.png'></image>
+  </view>
+  <view class='tabbar'>
+    <text wx:for='{{tab}}' wx:key bindtap='xuan' data-index='{{index}}' class='{{index==crindex?"xuanze":""}}'>{{item}}</text>
+    <text bindtap='jiage'>价格 {{fx?'∨':'∧'}}</text>
+  </view>
+  <view>
+    <view class='rexiao_box'>
+        <view class='jiage_box'wx:if='{{!fx}}'>
+          <view class='jiage_box_top'>
+            <text>0~50</text>
+            <text>50~80</text>
+            <text>80~200</text>
+          </view>
+          <view class='jiage_box_bottom'>
+            <view class='jiage_box_bottom_left'>
+              <text>区间(元)</text>
+              <input maxlength="6" type="number"/>
+              <input maxlength="6" type="number"/>
+            </view>
+            <text class='queren'>确认</text>
+          </view>
+        </view>
+        <view wx:for="{{rexiao_imgUrls}}" wx:key class='rexiao_block'>
+           <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="navigator-hover">
+           <image src="{{item.imgUrls}}" class="rexiao_image"/>
+           <view class='rexiao_cont'>
+              <text class='rexiao_tit'>{{item.title}}</text>
+              <view class='rexiao_price_box'>
+                  <view class='rexiao_p_box'>
+                    <text class='icon_money'>￥</text>
+                    <text class='rexiao_price'>{{item.price}}</text>
+                    <text class='rexiao_chuxiao'>促销价</text>
+                  </view>
+                  <text class='rexiao_originalPrice'>{{item.originalPrice}}</text>
+              </view>
+           </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  
+
+
+</view>

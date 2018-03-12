@@ -1,0 +1,54 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view>
+<view style='padding-bottom:120rpx'>
+
+  <view class='box' wx:for='{{shangpin}}' wx:key>
+    <text class='shangpin_top'>商品名称</text>
+    <view class='gwc_box'>
+      <checkbox></checkbox>
+      <image class='gwc_img'  src='{{item.imgurl}}'></image>
+      <view class='gwc_box_right'>
+        <view class='gwc_box_right_top' >
+          <text class='title'>{{item.title}}</text>
+          <view  class='title_bottom'>
+            <text class='price'>￥{{item.price*item.num}}.00</text>
+            <view class='originalPrice'>￥{{item.originalPrice*item.num}}.00</view>
+          </view>
+        </view>
+        <view class='shangchu_bigbox'>
+          <view >
+            <text class='color'>颜色: {{item.color}};尺码: {{item.size}}</text>
+            <view class='num_box'>
+              <image src='../../images/jian.png' class='jia_jian' bindtap='jian' id='{{item.num}}' data-hi='{{item.pid}}'></image>
+              <text class='number'>{{item.num}}</text>
+              <image src='../../images/jia.png' class='jia_jian' bindtap='jia' id='{{item.num}}' data-hi='{{item.pid}}' ></image>
+            </view>
+          </view>
+          <image src='../../images/shanchu.png' class='shanchu' bindtap='shanchu' data-pid='{{item.pid}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  
+  <view class='qingkong'>
+    <image src='../../images/tishi.png' class='qingkong_img'></image>
+    <text>清空购物车</text>
+  </view>
+</view>
+
+  <view class='jiesuan_box'>
+    <view>
+      <checkbox id='qx'></checkbox>
+      <label for='qx' class='qx'>全选(0)</label>
+    </view>
+    <view class='jiesuan_box_right'>
+      <view class='heji'>
+        <text class='heji1'>合计: ￥0</text>
+        <text class='heji2'>不含运费</text>
+      </view>
+      <text class='jiesuan'>结算</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,61 @@
+<view id='wrap'>
+    <scroll-view scroll-x class="scroll_view">
+        <view class="title_nav">
+          <text wx:for="{{num}}" id='{{index}}' wx:key bindtap='navtap'>{{item}}</text>
+        </view>
+    </scroll-view>
+    <!-- 轮播图 -->
+    <view class='bannaer_box'>
+        <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="1"  class="banaer">
+        <block wx:for="{{imgUrls}}" wx:key>
+          <swiper-item >
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='sousuo_bigbox'>
+        <view class='sousuo_box' bindtap='sousuo'>
+          <image src="../../images/sousuo.png" class="sousuo-image" />
+          <text> 搜一搜 美丽无所遁形</text>
+        </view>
+      </view>
+      
+    </view>
+    <!-- 秒杀 -->
+    <view class='miaosha_box'>
+      <view class='miaosha'>
+        <image src="https://img.alicdn.com/tfs/TB1UU5VRVXXXXXTXVXXXXXXXXXX-380-200.jpg" class="miaosha-image" width="355" height="200"/>
+        <image src="https://img.alicdn.com/tfs/TB1XFakSpXXXXa1XVXXXXXXXXXX-380-200.jpg" class="miaosha-image" width="355" height="200"/>
+      </view>
+      <view class='miaosha'>
+        <image src="https://img.alicdn.com/tps/TB1C7qtPpXXXXb7XFXXXXXXXXXX-380-200.jpg" class="miaosha-image" width="355" height="200"/>
+        <image src="https://img.alicdn.com/tps/TB1OuaCOFXXXXX3XXXXXXXXXXXX-380-200.jpg" class="miaosha-image" width="355" height="200"/>
+      </view>
+    </view>
+    <!-- 热销尖货 -->
+    <view>
+      <view class='jianhuo_tit'>
+        <text>— ☆ 热销尖货 ☆ —</text>
+      </view>
+      <view class='rexiao_box'>
+        <view wx:for="{{rexiao_imgUrls}}" wx:key class='rexiao_block'>
+           <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="navigator-hover">
+           <image src="{{item.imgUrls}}" class="rexiao_image"/>
+           <view class='rexiao_cont'>
+              <text class='rexiao_tit'>{{item.title}}</text>
+              <view class='rexiao_price_box'>
+                  <view class='rexiao_p_box'>
+                    <text class='icon_money'>￥</text>
+                    <text class='rexiao_price'>{{item.price}}</text>
+                    <text class='rexiao_chuxiao'>促销价</text>
+                  </view>
+                  <text class='rexiao_originalPrice'>￥{{item.originalPrice}}</text>
+              </view>
+           </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+</view>
+

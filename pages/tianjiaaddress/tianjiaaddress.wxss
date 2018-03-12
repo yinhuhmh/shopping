@@ -1,0 +1,53 @@
+/* pages/tianjiaaddress/tianjiaaddress.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+.btn{
+  display: block;
+  width: 100%;
+  font-size: 32rpx;
+  text-align: center;
+  padding: 25rpx;
+  background-color: #f65;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.address view{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #ddd;
+  padding: 25rpx;
+  background-color: white;
+}
+.address view text{
+  display: inline-block;
+  width: 170rpx;
+  font-size: 34rpx;
+}
+
+/* 地区 */
+.picker-view {
+  width: 100%;
+  display: flex;
+  z-index:12;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 40vh;
+}
+
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}
+.sanji{
+  flex: 1;
+}

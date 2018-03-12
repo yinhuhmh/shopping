@@ -1,0 +1,28 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view class='portrait'>
+    <image src='http://www.qqxoo.com/uploads/allimg/180303/1615126103-4.jpg' ></image>
+    <view class='portrait_right'>
+      <text>昵称</text>
+      <text bindtap='address'>我的收获地址 ></text>
+    </view>
+  </view>
+  <view class='qbdd' bindtap='qbdd'>
+    <text>我的订单</text>
+    <text class='qbdd_right'>查看全部订单 ></text>
+  </view>
+  <view class='payment'>
+    <view wx:for='{{payment}}' wx:key class='payment_son' bindtap='payment_tap' data-index='{{index}}'>
+      <image src="{{item.img}}"></image>
+      <text>{{item.cont}}</text>
+    </view>
+  </view>
+  <!-- 客服 -->
+  <view wx:for='{{kefu_arr}}' class='kefu_arr'>
+    <view>
+      <image src='{{item.img}}'></image>
+      <text>{{item.cont}}</text>
+    </view>
+    <text>></text>
+  </view>
+</view>

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/tianjiaaddress/tianjiaaddress",
+    "pages/address/address",
+    "pages/order/order",
+    "pages/ssresult/ssresult",
+    "pages/sousuo/sousuo",
+    "pages/shopcart/shopcart",
+    "pages/classification/classification",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "服装商场",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home1.png",
+        "selectedIconPath":"./images/home2.png",
+        "selectedColor":"#E84D23"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "./images/fenlei1.png",
+        "selectedIconPath":"./images/fenlei2.png",
+        "selectedColor": "#E84D23"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "./images/GWC1.png",
+        "selectedIconPath":"./images/GWC2.png",
+        "selectedColor": "#E84D23"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/mine1.png",
+        "selectedIconPath":"./images/mine2.png",
+        "selectedColor": "#E84D23"
+      }
+    ]
+  }
+}

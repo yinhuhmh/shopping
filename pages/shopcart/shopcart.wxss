@@ -1,0 +1,151 @@
+/* pages/shopcart/shopcart.wxss */
+page{
+  background-color: #eee;
+}
+.box{
+  background-color: white;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.shangpin_top{
+  display: block;
+  padding: 25rpx;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #aaa;
+  background-color: white;
+}
+.gwc_box{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  align-items: center;
+}
+.gwc_img{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+.gwc_box_right{
+  flex: 1;
+  padding: 10rpx;
+}
+.gwc_box_right_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title{
+  display: block;
+  width: 290rpx;
+  height: 63rpx;
+  font-size: 29rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.title_bottom{
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.price{
+  color: #f94727;
+}
+.originalPrice{
+  font-size: 23rpx;
+  text-decoration:line-through;
+}
+.color{
+  font-size: 28rpx;
+  color: #aaa;
+  display: block;
+  padding-bottom: 10rpx;
+}
+.num_box{
+  width: 150rpx;
+  border: 1rpx solid #aaa;      
+  padding-left: 10rpx;                   
+}
+.jia_jian{
+  width: 30rpx;
+  height: 30rpx;
+}
+.number{
+  display: inline-block;
+  width: 80rpx;
+  text-align: center;
+}
+.shanchu{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: 40rpx;
+}
+.shangchu_bigbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.qingkong{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.qingkong image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.qingkong text{
+  font-size: 29rpx;
+  padding-left: 15rpx;
+}
+.jiesuan_box{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 10rpx;
+}
+.qx{
+  font-size: 29rpx;
+}
+.jiesuan_box_right{
+  display: flex;
+  flex-direction: row;
+}
+.heji{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.heji1{
+  font-size: 30rpx;
+  color: red;
+}
+.heji2{
+  font-size: 24rpx;
+  color: #aaa;
+}
+.jiesuan{
+  display: block;
+  height: 50rpx;
+  width: 120rpx;
+  padding: 10rpx 20rpx;
+  background-color: red;
+  margin: 5rpx 20rpx;
+  font-size: 33rpx;
+  color: white;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 50rpx;
+}

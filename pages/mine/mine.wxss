@@ -1,0 +1,81 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: #eee;
+}
+.portrait{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+.portrait image{
+  width: 115rpx;
+  height: 115rpx;
+  border-radius: 50%;
+  border: 6rpx solid #ccc;
+  margin: 20rpx;
+}
+.portrait_right{
+  display: flex;
+  flex-direction: column;
+}
+.portrait_right text{
+  font-size: 30rpx;
+}
+/* 全部订单 */
+.qbdd{
+  padding: 25rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 30rpx;
+  margin-bottom: 3rpx;
+}
+.qbdd_right{
+  font-size: 26rpx;
+  color: #888;
+}
+/* 待付款 */
+.payment{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  padding: 30rpx 0rpx;
+}
+.payment image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.payment_son{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment_son text{
+  font-size: 30rpx;
+  padding: 5rpx;
+}
+/* 客服 */
+.kefu_arr{
+  padding: 15rpx 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.kefu_arr view{
+  display: flex;
+  align-items: center;
+}
+.kefu_arr image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-left: 15rpx;
+}
+.kefu_arr text{
+  font-size: 33rpx;
+}

@@ -1,0 +1,22 @@
+/* pages/order/order.wxss */
+page{
+  background-color: rgb(244, 244, 244);
+}
+.nav_box{
+  border-top: 3rpx solid #ddd;
+  border-bottom: 3rpx solid #ddd;
+  position: relative;
+  top: 3rpx;
+  background-color: white;
+}
+.nav_arr{
+  font-size: 33rpx;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  line-height: 90rpx;
+}
+.xuanzhong{
+  color: red;
+  border-bottom: 6rpx solid red;
+}

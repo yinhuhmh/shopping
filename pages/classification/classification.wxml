@@ -1,0 +1,32 @@
+<!--pages/classification/classification.wxml-->
+<view class='fenlei'>
+  <view class='nav_left'>
+    <text class='nav_left_text {{index==crindex?"xuanz":"moren"}}' wx:for="{{nav}}" wx:key bindtap='navtap' id="{{index}}" >{{item}}</text>
+  </view>
+  <view class='nav_right'>
+    <image src='../../images/logo.png' class='logo'></image>
+    <view class='tabar'>
+      <text wx:for="{{tabar_arr}}" bindtap='tabar' class='{{index==crindex2?"tabbarxuan":""}}' data-index='{{index}}'>{{item}}</text>
+    </view>
+      <scroll-view scroll-y class='scroll'>
+        <view class='rexiao_box'>
+          <view wx:for="{{rexiao_imgUrls}}" wx:key class='rexiao_block'>
+            <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="navigator-hover">
+            <image src="{{item.imgUrls}}" class="rexiao_image"/>
+            <view class='rexiao_cont'>
+                <text class='rexiao_tit'>{{item.title}}</text>
+                <view class='rexiao_price_box'>
+                    <view class='rexiao_p_box'>
+                      <text class='icon_money'>￥</text>
+                      <text class='rexiao_price'>{{item.price}}</text>
+                      <text class='rexiao_chuxiao'>促销价</text>
+                    </view>
+                    <text class='rexiao_originalPrice'>￥{{item.originalPrice}}</text>
+                </view>
+            </view>
+            </navigator>
+          </view>
+        </view>
+      </scroll-view>
+  </view>
+</view>

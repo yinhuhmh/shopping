@@ -1,0 +1,29 @@
+<!--pages/sousuo/sousuo.wxml-->
+<view>
+  <view class='sousuo'>
+    <view class='tishi' wx:if='{{seen}}'>请先输入商品名称</view>
+    <view class='sousuo_box'>
+      <image src='../../images/sousuo.png' class='sslogo'></image>
+      <input placeholder="你喜欢的东西" bindinput="bindupInput"/>
+    </view>
+    <text class='sousuo_right' bindtap='ssresult'>搜索</text>
+  </view>
+  <view class='lishi'>
+    <text>历史搜索</text>
+    <image src='../../images/shanchu.png' class='sclogo' bindtap='shanchu'></image>
+  </view>
+  <view class='lishi_item'>
+    <text wx:key wx:for='{{lishi}}' bindtap='nav_lishi' data-item='{{item}}'>{{item}}</text>
+  </view>
+
+  <view class='remen'>
+    <text>热门搜索</text>
+  </view>
+  <view class='remen_item'>
+    <text wx:key wx:for='{{remen}}' bindtap='nav_remen' data-item='{{item}}'>{{item}}</text>
+  </view>
+
+
+
+
+</view>

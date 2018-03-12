@@ -1,0 +1,6 @@
+<!--pages/order/order.wxml-->
+<view>
+  <view class='nav_box'>
+    <text wx:for="{{nav_arr}}" wx:key class='nav_arr {{index==crindex?"xuanzhong":""}}' data-index='{{index}}' bindtap='navcrindex'>{{item}}</text>
+  </view>
+</view>

@@ -1,0 +1,134 @@
+/* pages/shopcart/shopcart.wxss */
+#wrap{
+  background-color: #eee;
+}
+/* 头部导航条 */
+.title_nav{
+  white-space:nowrap;
+}
+.title_nav text{
+  padding: 20rpx;
+  display: inline-block;
+  background-color: white;
+  font-size: 34rpx;
+}
+.title_nav text:nth-child(1){
+  border-bottom: 5rpx solid red;
+}
+.scroll_view{
+  width: 100%;
+  padding-bottom: 10rpx;
+  background-color: white;
+}
+
+/* 轮播图 */
+.bannaer_box{
+  position: relative;
+}
+.banaer{
+  height: 430rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.sousuo_bigbox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20rpx;
+}
+.sousuo_box{
+  width: 90%;
+  height: 60rpx;
+  background-color: rgba(233, 233, 233, 0.9);
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sousuo_box text{
+  font-size: 30rpx;
+  color:#666;
+}
+.sousuo-image{
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 秒杀 */
+.miaosha_box{
+  padding: 20rpx;
+}
+.miaosha-image{
+  width: 48.5%;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+.miaosha{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.miaosha:nth-child(1){
+  margin-bottom: 25rpx;
+}
+/* 热销尖货 */
+.jianhuo_tit {
+  text-align: center;
+  padding-bottom: 25rpx;
+  color: #666;
+}
+.rexiao_box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25rpx;
+}
+.rexiao_block{
+  width: 48%;
+  background-color: white;
+  margin-bottom: 25rpx;
+  border-radius: 25rpx;
+}
+.rexiao_tit{
+  display: block;
+  font-size: 33rpx;
+  height: 79rpx;
+  overflow: hidden;
+  
+}
+.icon_money{
+  font-size: 23rpx;
+}
+.rexiao_price{
+  font-size: 33rpx;
+  margin-right: 5rpx;
+}
+.rexiao_chuxiao{
+  font-size: 25rpx;
+  color: red;
+  display: block;
+  width: 76rpx;
+  height: 32rpx;
+  background-color: pink;
+}
+.rexiao_originalPrice{
+  font-size: 25rpx;
+  text-decoration:line-through;
+}
+.rexiao_image{
+  width: 100%;
+  height: 400rpx;
+  border-radius: 10rpx;
+}
+.rexiao_price_box,.rexiao_p_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.rexiao_cont{
+  padding: 0 10rpx 10rpx 10rpx;
+}

@@ -1,0 +1,95 @@
+<!--pages/detail/detail.wxml-->
+<view id="warp">
+  <scroll-view scroll-y class='scroll-view_h'>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='detail_top'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="detail_top-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 标题 -->
+  <view class="title">
+    <text>{{detaildata.title}}</text>
+  </view>
+  <view class='detail_price'>
+    <view class='price_box'>
+      <text>￥</text>
+      <text class='price'>{{detaildata.price}}</text>
+      <view>
+        <text class='originalPrice'>价格:￥{{detaildata.originalPrice}}</text>
+        <view class='type'>新品抢鲜</view>
+      </view>
+    </view>
+    <view class='fenxiang'>
+        <image src="../../images/fenxiang.png" class="detail_fenxiang_image"/>
+        <text>分享</text>
+    </view>
+  </view>
+  <view class='kuaidi'>
+    <text>快递: {{detaildata1.kuaidi}}</text>
+    <text>销售: {{detaildata1.xiaoshou}}件</text>
+    <text>库存: {{detaildata1.kucun}}件</text>
+  </view>
+  <!-- 优惠券 -->
+  <view>
+
+  </view>
+  <!-- 选择颜色尺码 -->
+  <view class='xuanze'>
+    <view class='xuanze_left'>
+      <text>选择</text>
+      <text>颜色</text>
+      <text>尺码</text>
+    </view>
+    <image src='../../images/jiantou.png' class='detail_jiantou'></image>
+  </view>
+  <!-- 商品详情 -->
+  <view class='detail'>
+    <text>商品详情</text>
+    <view>
+      <image src='../../images/detail.png' class='detail_img'></image>
+    </view>
+  </view>
+  </scroll-view>
+  <!-- 详情页底部 -->
+  <view class='detail_bottom'>
+    <view class='detail_bottom_icon_box'>
+       <view bindtap='shouye' class='detail_bottom_icon'>
+          <image src="../../images/detailshouye.png" class="detail_bottom-icon"/>
+          <view>首页</view>
+        </view>
+        <view class='detail_bottom_icon'>
+          <image src="../../images/detailshouc.png" class="detail_bottom-icon"/>
+          <view>收藏</view>
+        </view>
+        <view bindtap='shopcart' class='detail_bottom_icon'>
+          <image src="../../images/detailgwc.png" class="detail_bottom-icon"/>
+          <view>购物车</view>
+        </view>
+    </view>
+    <view  bindtap='jiaru' class='jiaru'>
+      <text>加入购物车</text>
+    </view>
+    <view class='goumai'>
+      <text>立即购买</text>
+    </view>
+  </view>
+
+  <!-- 选择颜色尺码 -->
+   <!-- <view class='xcima_box_kongbai'></view>
+
+  <view class='xcima_box'>
+    <view class='xcima_box_top'>
+      <view class='xcima_box_top_img_box'>
+        <image src='https://gd4.alicdn.com/imgextra/i3/272081940/TB25KPNjm0mpuFjSZPiXXbssVXa_!!272081940.jpg' class='xcima_box_top_img'></image>
+      </view>
+      <view>
+        <text>$259.00</text>
+        <text>库存: 100件</text>
+        <text>已选: "驼色" "M"</text>
+      </view>
+    </view>
+  </view>  -->
+</view>

@@ -1,0 +1,187 @@
+/* pages/detail/detail.wxss */
+.detail_top-image{
+  width: 100%;
+  height: 100%;
+}
+.detail_top{
+  height: 600rpx;
+}
+.detail_bottom-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.detail_bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+}
+.jiaru{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  color:red;
+  font-size: 35rpx;
+}
+.goumai{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color:white;
+  font-size: 35rpx;
+}
+.detail_bottom_icon_box{
+  padding:0 16rpx 0 16rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  background-color: white;
+}
+.detail_bottom_icon{
+  font-size: 25rpx;
+  padding: 10rpx;
+}
+.title{
+  padding: 25rpx;
+  padding-bottom: 0;
+  font-size: 32rpx;
+  color: black;
+}
+.detail_fenxiang_image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.fenxiang{
+  display: flex;
+  flex-direction: column;
+}
+.fenxiang text{
+  color:#f94727;
+  font-size: 35rpx;
+}
+.fenxiang image{
+  padding-left: 18rpx;
+}
+.detail_price{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #f94727;
+}
+.price{
+  font-size: 65rpx;
+  margin-right: 15rpx;
+  position: relative;
+  top: 6rpx;
+}
+.originalPrice{
+  font-size: 28rpx;
+  text-decoration:line-through;
+  color: #333;
+}
+.type{
+  width: 115rpx;
+  padding: 5rpx;
+  padding-left: 20rpx;
+  font-size: 25rpx;
+  border: 2rpx solid red;
+}
+.kuaidi{
+  padding: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 30rpx;
+  border-bottom: 20rpx solid #eee;
+}
+.detail_jiantou{
+  width: 40rpx;
+  height: 40rpx;
+}
+.xuanze{
+  padding: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 20rpx solid #eee;
+}
+.xuanze_left text{
+  margin-right: 25rpx;
+  font-size: 33rpx;
+}
+.xuanze_left text:nth-child(1){
+  font-size: 30rpx;
+  color:#666;
+}
+.detail{
+  margin-top: 10rpx;
+}
+.detail text{
+  padding: 25rpx;
+  font-size: 36rpx;
+}
+.detail_img{
+  width: 100%;
+  height: 1500px;
+}
+
+.scroll-view_h{
+  height: 1100rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/* 选择尺码 颜色 */
+.xcima_box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: white;
+}
+.xcima_box_kongbai{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(222, 222, 222, 0.5);
+}
+.xcima_box_top{
+  display: flex;
+  flex-direction: row;
+}
+.xcima_box_top_img{
+  width: 350rpx;
+  height: 555rpx;
+  position: relative;
+  left:-20rpx;
+}
+.xcima_box_top_img_box{
+  width: 252rpx;
+  height: 420rpx; 
+  overflow: hidden;
+  position: relative;
+  top: -200rpx;
+  left: 60rpx;
+  border-radius: 10rpx;
+}

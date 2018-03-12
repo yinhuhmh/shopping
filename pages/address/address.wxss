@@ -1,0 +1,40 @@
+/* pages/address/address.wxss */
+page{
+  background-color: rgb(250, 250, 250);
+}
+.wrap{
+}
+.scroll{
+  height: 100%;
+}
+
+.address_bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom:0;
+  left: 0;
+}
+.address_bottom view{
+  width: 50%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.address_bottom_weixn{
+  background-color: #85DA46;
+  font-size: 34rpx;
+  color: white;
+}
+.address_bottom_tianjia{
+  background-color: #f65;
+  font-size: 34rpx;
+  color: white;
+}
+.address_bottom view image{
+  width: 55rpx;
+  height: 55rpx;
+  padding-right: 10rpx;
+}

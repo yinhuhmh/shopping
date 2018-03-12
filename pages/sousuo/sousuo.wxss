@@ -1,0 +1,84 @@
+/* pages/sousuo/sousuo.wxss */
+.sslogo{
+  width: 50rpx;
+  height: 50rpx;
+  padding-left: 12rpx;
+}
+.sousuo{
+  padding: 15rpx;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* 提示 */
+.tishi{
+  width: 100%;
+  height: 65rpx;
+  background-color: red;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  font-size: 28rpx;
+  line-height: 65rpx;
+  color: white;
+}
+.sousuo_box{
+  flex: 1;
+  display: flex;
+  background-color: #eee;
+  border-radius: 50rpx;
+  padding: 8rpx;
+}
+.sousuo_box input{
+  width: 100%;
+  padding-left: 10rpx;
+  font-size: 32rpx;
+  padding-right: 15rpx;
+}
+.sousuo_right{
+  display: block;
+  padding: 10rpx;
+  padding-left: 20rpx;
+  font-size: 33rpx;
+}
+
+/* 历史 */
+.lishi{
+  padding: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.lishi text{
+  font-size: 33rpx;
+}
+.lishi_item text{
+  display: inline-block;
+  background-color: #eee;
+  font-size: 33rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+  margin:10rpx;
+}
+.sclogo{
+  width: 45rpx;
+  height: 45rpx;
+}
+.remen{
+  font-size: 33rpx;
+  padding: 15rpx;
+}
+.remen_item,.lishi_item{
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+.remen_item text{
+  display: inline-block;
+  background-color: #eee;
+  font-size: 33rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+  margin:10rpx;
+}
